@@ -20,7 +20,7 @@
 
 To work with migrations, make sure that you're in the directory of the root package (`cd src/fastapi_template`) and not in the root of the repository
 
-1. Run `poetry shell` to activate the virtual environment
+1. Run `poetry install` and then `poetry shell` to activate the virtual environment
 
 2. To generate migrations, run `alembic revision --autogenerate`. Check the generated migration file inside `src/fastapi_template/migrations/versions`
 
