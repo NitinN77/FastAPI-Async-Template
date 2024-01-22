@@ -24,6 +24,6 @@ WORKDIR /src
 
 COPY src/ .
 
-ENTRYPOINT ["uvicorn", "fastapi_template.main:app", "--host", "0.0.0.0"]
+ENTRYPOINT ["uvicorn", "fastapi_template.main:app", "--host", "0.0.0.0", "--reload"]
 
 EXPOSE 8000
