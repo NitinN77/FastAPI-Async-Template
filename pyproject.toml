@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "fastapi-vercel-demo"
+name = "fastapi_template"
 version = "0.1.0"
 description = ""
 authors = ["NitinN77 <nitinnarayanan77@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "fastapi_vercel_demo", from = "src" }]
+packages = [{ include = "fastapi_template", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"

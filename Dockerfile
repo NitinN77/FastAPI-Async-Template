@@ -10,7 +10,6 @@ ENV POETRY_NO_INTERACTION=1 \
 WORKDIR /app
 
 COPY pyproject.toml poetry.lock ./
-RUN touch README.md
 
 RUN --mount=type=cache,target=$POETRY_CACHE_DIR poetry install --without dev --no-root
 
@@ -21,8 +20,10 @@ ENV VIRTUAL_ENV=/app/.venv \
 
 COPY --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 
-COPY src ./src
+WORKDIR /src
 
-ENTRYPOINT ["uvicorn", "fastapi_vercel_demo.main:app", "--host", "0.0.0.0"]
+COPY src/ .
+
+ENTRYPOINT ["uvicorn", "fastapi_template.main:app", "--host", "0.0.0.0"]
 
 EXPOSE 8000
