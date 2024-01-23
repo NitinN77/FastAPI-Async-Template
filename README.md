@@ -5,6 +5,9 @@
 - An optimized dockerfile for production
 - A compose file for a pleasant local development experience
 - Poetry for dependency management
+- Unit and Integration testing with pytest (async fixtures and async test support included)
+- Code formatting with black and isort
+- Type Checking with mypy
 
 ## Useful Commands
 
@@ -28,4 +31,12 @@ To work with migrations, make sure that you're in the directory of the root pack
 
 ### Testing
 
-1. Run `pytest tests` from the root of the repository
+1. To run unit tests, run `pytest .\tests\unit\`
+2. To run integration tests, run `pytest .\tests\integration\`
+3. To run all tests, run `pytest tests`
+
+### Formatting and Type Checking
+
+1. To run black, run `black .`
+2. To run isort, run `isort .`
+3. To run mypy, run `mypy .`

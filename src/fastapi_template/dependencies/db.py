@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine
 
 from fastapi_template.settings.environment import get_settings
 
-engine = create_async_engine(get_settings().DB_URL)  # type: ignore
+engine = create_async_engine(get_settings().DB_URL)
 SessionLocal = async_sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 

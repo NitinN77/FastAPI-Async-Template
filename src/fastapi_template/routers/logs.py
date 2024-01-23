@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from fastapi_template.dependencies import db
+from fastapi_template.dependencies.db import db
 from fastapi_template.handlers.logs import get_all_logs, insert_log
 from fastapi_template.schemas.logs import CreateLogRequest
 
