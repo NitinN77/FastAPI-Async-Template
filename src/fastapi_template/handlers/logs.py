@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from fastapi_template.models import Log
 from fastapi_template.schemas.logs import CreateLogRequest
+from fastapi_template.utils.logger import logger
 
 
 async def get_all_logs(db: AsyncSession):
@@ -17,4 +18,5 @@ async def insert_log(request: CreateLogRequest, db: AsyncSession):
     await db.commit()
     await db.refresh(new_log)
 
+    logger.info(f"Inserted log: {request.model_dump()}")
     return new_log

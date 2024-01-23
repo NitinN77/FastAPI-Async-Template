@@ -8,6 +8,7 @@
 - Unit and Integration testing with pytest (async fixtures and async test support included)
 - Code formatting with black and isort
 - Type Checking with mypy
+- Includes a simple logger
 
 ## Useful Commands
 
