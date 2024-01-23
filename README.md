@@ -27,12 +27,14 @@ To work with migrations, make sure that you're in the directory of the root pack
 
 ### Testing
 
-1. To run unit tests, run `pytest .\tests\unit\`
-2. To run integration tests, run `pytest .\tests\integration\`
-3. To run all tests, run `pytest tests`
+1. Make sure that the virtual environment is active by running `poetry shell`
+2. To run unit tests, run `pytest .\tests\unit\`
+3. To run integration tests, run `pytest .\tests\integration\`
+4. To run all tests, run `pytest tests`
 
 ### Formatting and Type Checking
 
-1. To run black, run `black .`
-2. To run isort, run `isort .`
-3. To run mypy, run `mypy .`
+1. Make sure that the virtual environment is active by running `poetry shell`
+2. To run black, run `black .`
+3. To run isort, run `isort .`
+4. To run mypy, run `mypy .`
