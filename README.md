@@ -25,3 +25,7 @@ To work with migrations, make sure that you're in the directory of the root pack
 2. To generate migrations, run `alembic revision --autogenerate`. Check the generated migration file inside `src/fastapi_template/migrations/versions`
 
 3. To apply migrations, run `alembic upgrade head`
+
+### Testing
+
+1. Run `pytest tests` from the root of the repository

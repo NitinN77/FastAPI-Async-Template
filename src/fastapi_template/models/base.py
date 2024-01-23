@@ -13,6 +13,3 @@ class Log(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     info: Mapped[str] = mapped_column(String, nullable=True)
-
-    def __init__(self, info: Optional[str]):
-        self.info = info
