@@ -24,6 +24,6 @@ WORKDIR /src
 
 COPY src/ .
 
-ENTRYPOINT ["gunicorn", "fastapi_template.main:app", "--workers", "4", "--worker-class", "fastapi_template.uvicorn_workers.RestartableUvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile=-", "--reload"]
+ENTRYPOINT ["gunicorn", "fastapi_template.main:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--access-logfile=-", "--reload"]
 
 EXPOSE 8000

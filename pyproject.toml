@@ -19,6 +19,7 @@ alembic = "^1.13.1"
 python-dotenv = "^1.0.0"
 pydantic-settings = "^2.1.0"
 psycopg2 = "^2.9.9"
+gunicorn = "^21.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
