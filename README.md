@@ -2,7 +2,7 @@
 
 - Asynchronous queries with asyncpg and SQLAlchemy 2.0
 - Migrations using alembic
-- An optimized dockerfile for production
+- An optimized dockerfile for production with gunicorn and reloadable uvicorn workers
 - A compose file for a pleasant local development experience
 - Poetry for dependency management
 - Unit and Integration testing with pytest (async fixtures and async test support included)
